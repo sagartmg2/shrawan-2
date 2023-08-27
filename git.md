@@ -11,9 +11,16 @@ remote-repo
     to check if linked or not with remote repository  repo
         git remote -v
 
-u - new files  / untracked files
-
-
 <!-- frequenlty used codes -->
 1. git status
 2. git add . 
+3. git commit -m "html-css" 
+4. git push
+
+
+
+
+
+
+u - new files  / untracked files
+a - added
