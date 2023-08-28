@@ -2,6 +2,7 @@ reposotory or repo  // folder
 local-repo // 
 remote-repo
 
+ctrl + `
 
 <!-- inital setup -->
  1 git init
@@ -10,6 +11,10 @@ remote-repo
 
     to check if linked or not with remote repository  repo
         git remote -v
+
+
+
+
 
 <!-- frequenlty used codes -->
 1. git status
