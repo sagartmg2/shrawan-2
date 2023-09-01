@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* background-color: rgba(255,0,0,0.05); */
+            /* margin:0; */
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+
+        .static {
+            position: static;
+        }
+
+        .relative {
+            background-color: white;
+            position: relative;
+            left: 100px;
+            top: 10px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 150px;
+            right: 0;
+            background-color: orange;
+        }
+
+        .fixed {
+            position: fixed;
+            background-color: gold;
+            height: 50px;
+            width: 50px;
+            right: 50px;
+            bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        .sticky {
+            position: sticky;
+
+            background-color: red;
+            top: 100px;
+            /* bottom:20px */
+        }
+
+        .parent {
+            border: 2px solid black;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .small-box {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+            right: 1rem;
+            top: 1rem;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            z-index: 99999;
+        }
+        nav {
+            height: 50px;
+            background-color: #333;
+            color: white;
+            font-size: 24px;
+            
+            /* display: none; */
+        }
+
+        .two{
+            right: 50px;
+            z-index: 2;
+            background-color: red;
+        }
+        .three{
+            right: 100px;
+        }
+
+        .wrapper{
+            border: 1px solid red;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            home about
+        </nav>
+    </header>
+
+    <h1>css positions</h1>
+
+    <div class="box static">static</div>
+    <div class="box relative">relative : maintains its original dom position</div>
+    <div class="box absolute">absolute one</div>
+    <div class="box absolute two">absolute two</div>
+    <div class="box absolute three">absolute three</div>
+    <div class="box fixed">top</div>
+    <div class="wrapper">
+        <div class="box sticky">stickty</div>
+        <div class="descripton">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore asperiores ab voluptatum cupiditate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate deitate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate deitate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate deitate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate deitate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate deitate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate delectus est odio deleniteprehenderit labore asperiores ab voluptatum cupiditate delectus est odio deleniti libero veniam, dolorum quibusdam fuga soluta facere non dolorem rerum. Eos, officiis.</p>
+        </div>
+    </div>
+
+    <div class="parent">
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quidem dignissimos excepturi earum
+                distinctio! Molestias a animi asperiores, dolor quam nihil dolorem nulla! Porro, numquam. Sunt vel magni
+                tempora ea.</p>
+        </div>
+        <div class="box small-box">
+            parent->box
+        </div>
+    </div>
+
+
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum assumenda eius ut ipsa, quo corrupti modi
+        magnam cupiditate explicabo, iste ab repellat reprehenderit nostrum rem error ipsam unde eaque expedita?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum assumenda eius ut ipsa, quo corrupti modi
+        magnam cupiditate explicabo, iste ab repellat reprehenderit nostrum rem error ipsam unde eaque expedita?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum assumenda eius ut ipsa, quo corrupti modi
+        magnam cupiditate explicabo, iste ab repellat reprehenderit nostrum rem error ipsam unde eaque expedita?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum assumenda eius ut ipsa, quo corrupti modi
+        magnam cupiditate explicabo, iste ab repellat reprehenderit nostrum rem error ipsam unde eaque expedita?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum assumenda eius ut ipsa, quo corrupti modi
+        magnam cupiditate explicabo, iste ab repellat reprehenderit nostrum rem error ipsam unde eaque expedita?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum assumenda eius ut ipsa, quo corrupti modi
+        magnam cupiditate explicabo, iste ab repellat reprehenderit nostrum rem error ipsam unde eaque expedita?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum assumenda eius ut ipsa, quo corrupti modi
+        magnam cupiditate explicabo, iste ab repellat reprehenderit nostrum rem error ipsam unde eaque expedita?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum assumenda eius ut ipsa, quo corrupti modi
+        magnam cupiditate explicabo, iste ab repellat reprehenderit nostrum rem error ipsam unde eaque expedita?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum assumenda eius ut ipsa, quo corrupti modi
+        magnam cupiditate explicabo, iste ab repellat reprehenderit nostrum rem error ipsam unde eaque expedita?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum assumenda eius ut ipsa, quo corrupti modi
+        magnam cupiditate explicabo, iste ab repellat reprehenderit nostrum rem error ipsam unde eaque expedita?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum assumenda eius ut ipsa, quo corrupti modi
+        magnam cupiditate explicabo, iste ab repellat reprehenderit nostrum rem error ipsam unde eaque expedita?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum assumenda eius ut ipsa, quo corrupti modi
+        magnam cupiditate explicabo, iste ab repellat reprehenderit nostrum rem error ipsam unde eaque expedita?</p>
+
+
+</body>
+
+</html>
