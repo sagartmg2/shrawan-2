@@ -71,13 +71,12 @@ header nav {
     display: none;
 }
 
-.sidebar.active{
+.sidebar.active {
     display: flex;
 }
 
-
-
-.nav-links,.auth-buttons {
+.nav-links,
+.auth-buttons {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -136,7 +135,12 @@ header nav {
 .banner {
     margin-top: 5.5rem;
     display: flex;
-    display: none;
+    flex-direction: column-reverse;
+    gap: 2rem;
+}
+
+.banner img {
+    max-width: 100%;
 }
 
 .banner .motto {
@@ -159,12 +163,19 @@ header nav {
 }
 
 
+@media (min-width:768px) {
+    .banner {
+        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (min-width:1024px) {
     .menu-icon {
         display: none;
     }
-    
+
     .sidebar {
         background-color: transparent;
         position: static;
@@ -172,7 +183,9 @@ header nav {
         align-items: center;
         flex-direction: row;
     }
-    .nav-links,.auth-buttons {
+
+    .nav-links,
+    .auth-buttons {
         flex-direction: row;
     }
 
@@ -180,6 +193,8 @@ header nav {
         display: flex;
         gap: 40px;
     }
+
+
 }
 
 @media (min-width:1200px) {
