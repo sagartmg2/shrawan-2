@@ -1,112 +1,131 @@
-/* variables 
-    keywords which can store some vaues...
-
-    NOTE : donot create variables using reserved keywords  in js
-
-    synatx :
-
-    let <varaibleName> = <variableValue>
-    eg: let color = "red"
-        let brand = "Apple"
-        
-        var size:"md"
-
-        const PI = 3.145
-
+/* 
+let 
+vs
+const
 */
+console.log("connencted.");
 
-/* Data types 
-    text - String
-    number - number
-            - integer // whole number
-            - float   // decimal
-    true/false   - Boolean
+let colorName = "red" // decartion and initilzation.
+let color = colorName
+color = "green" // re-initialziation
+color = "orange" // re-initialziation
+console.log("color", color);
 
-    undefined // variable created but not initialized yet  // only in javascript
-    null // explicitely defining vlaues as empty
-*/
+let brand; // delcartion only
+brand = "apple" // 
+brand = "samsung" // re-initialzie..
+console.log("brand", brand);
 
-console.log("web")
-var course = "Web Dev"
-console.log("course", course)
-
-let course_duration = 3 // naming convention : snake_case
-courseDuration = 2.5 // camelCase
-console.log(course_duration);
-console.log(courseDuration);
-
-isCompleted = false
-console.log("course complted status:", isCompleted)
+const DOMAIN = "www.mindriser.com"
+// DOMAIN = "someohter.." // error: cannot change constat varaiable
 
 
-// let = 12;
-// console.log(let);
-// const = "constant"
-// console.log("con",const);
+let age = 12;
+let inStock = false
 
+let price;
+console.log("price", price); // undefined
 
-var course = "python" // unknowing we replace above course varaible while creating new varialbe
-let python_course_duration = 2.5
+let productVariant = null
 
+let length = 100
+length = 200
+console.log("__________length", length);
 
-/* DECLARTION AND INITIALZIATION 
-    - declartion - creation of variable
-    - initilzation - value update
+/* Data types
+    pirmitive data types
+        string    text 
+        number    integer , float 
+        boolen    true / false
+        undefined
+        null
 
+    non-primitive (collections)
+        array
+            - collection of different values
+            - mostly it is collection of similar data-types
 */
 
 
-let count  // declartion 
-count = 100 // initialization
-console.log("count:", count);
+/* Array
+    syntax
 
+    let <arrayVariableName> = [ <element-1>, <element-2>,  <element-3>  ]
+    eg:
+        let numbers = [ 1, 2,  3  ]
+        let courses = ["Mern", "Python", "QA", "Marketing"]
 
-let brand = "Apple"; // both declartion and initializtion
-console.log("brand -prev:", brand);
-brand = "samsung" // re-initalization
-brand = "LG" // re-initalization
-console.log("brand -after:", brand);
-
-let color = "red"
-console.log("color -prev:", color)
-color = "orange"
-console.log("color -after:", color)
-
-
-const PI = 3.145
-// PI = 3.134532  // cannot re-initialzie constant variable
-console.log("PI:", PI)
-
-// const ROTATION; 
-// ROTATION = "W-E"
-
-const EARTH_ROTATION = "W-E"
-console.log("ROTATION:", EARTH_ROTATION)
-
-
-
-/* var vs let vs const
-        var
-            - declartion 
-            - re-declartion again and gain  // this will case errors in application 
-            - re-initlazation again and again 
-
-        let
-            - declare only only 
-            - re-initlazation again and again 
-
-        const 
-            - declarce once and initialize once 
+    Index
+        - always starts with 0
+        - to access value,use index
+        - to change value,use index
+        - to add value,use index
 */
 
 
-console.log("couse duration", course, course_duration);
+
+let course = "Mern"
+let course2 = "Python"
+let course3 = "QA"
+let course4 = "Marketing"
+
+// let courses = "Mern","Python" // err: syntax error
+// let courses = "Mern, Python, QA" // not right form
+
+
+let courses = ["Mern", "Python", "QA", "Marketing"]
+console.log("cousrs", courses);
+
+let color1 = "red"
+let color2 = "green"
+let color3 = "blue"
+let colors = ["red", "green", color3]
+console.log("colors", colors);
 
 
 
-let productPrice
-console.log("productPrice", productPrice);
+
+let prices = [200, 100, 3000]
+let evenNumbers = [2, 4, 6, 8, 10]
+
+let userStatuses = [true, false, true, true]
+
+let arr = ["string", true, undefined, null, 100]
+console.log("arr", arr);
+
+// let brands = [0th index, 1st index]
+// let brands = ["apple", "lg"]
 
 
-let data = null
-console.log("data", data);
+let brands = ["apple", "lg"]
+/* code here to change lg -> samsung */
+console.log("brands - prev", brands);
+console.log("brand's 0th index", brands[0]);
+console.log("brand's 1st index   -- prev", brands[1]);
+
+brands[1] = "samsung" // updates lg -> samsung
+
+console.log("brand's 1st index   -- after ", brands[1]);
+
+console.log("brands - after", brands);
+
+brands[2] = "panasonic"  // adds new value in index 2
+
+console.log("brands - after", brands);
+
+/* 
+
+    let length = 100
+    length = 200
+
+    array elements update
+    brands[1] = lg
+    brands[1] = samguns
+
+
+*/
+
+
+
+
+
