@@ -1,131 +1,180 @@
 /* 
-let 
-vs
-const
-*/
-console.log("connencted.");
+    make an array of persons
+    and perform mutation on it.. .ie. change value of array elements.
 
-let colorName = "red" // decartion and initilzation.
-let color = colorName
-color = "green" // re-initialziation
-color = "orange" // re-initialziation
-console.log("color", color);
+    make use of array's index.
 
-let brand; // delcartion only
-brand = "apple" // 
-brand = "samsung" // re-initialzie..
-console.log("brand", brand);
+    synatx
 
-const DOMAIN = "www.mindriser.com"
-// DOMAIN = "someohter.." // error: cannot change constat varaiable
+    let arrName = [ element-1,element-2,element-3  ]
 
 
-let age = 12;
-let inStock = false
-
-let price;
-console.log("price", price); // undefined
-
-let productVariant = null
-
-let length = 100
-length = 200
-console.log("__________length", length);
-
-/* Data types
-    pirmitive data types
-        string    text 
-        number    integer , float 
-        boolen    true / false
-        undefined
-        null
-
-    non-primitive (collections)
-        array
-            - collection of different values
-            - mostly it is collection of similar data-types
 */
 
+let persons = ["ram", "hari", "sita", "ram"]
+console.log("persons - before", persons);
+console.log("1st index", persons[1]);
+persons[1] = "shyam"
+console.log("persons - after", persons);
 
-/* Array
-    syntax
 
-    let <arrayVariableName> = [ <element-1>, <element-2>,  <element-3>  ]
-    eg:
-        let numbers = [ 1, 2,  3  ]
-        let courses = ["Mern", "Python", "QA", "Marketing"]
 
-    Index
-        - always starts with 0
-        - to access value,use index
-        - to change value,use index
-        - to add value,use index
+/*
+ Object // just like real life objects 
+
+    key or property or attribute or field     of an object
+
+    let <objName>  = {
+        <key> : <value>,
+        <key> : <value>,
+        <key> : <value>
+    }
+    
 */
 
+let projectorColor = "white"
+let projectorPrice = 50000
+let projectorBrand = "lg"
 
+let projector2Color = "black"
+let projector2Price = 40000
+let projector2Brand = "benq"
 
-let course = "Mern"
-let course2 = "Python"
-let course3 = "QA"
-let course4 = "Marketing"
-
-// let courses = "Mern","Python" // err: syntax error
-// let courses = "Mern, Python, QA" // not right form
-
-
-let courses = ["Mern", "Python", "QA", "Marketing"]
-console.log("cousrs", courses);
-
-let color1 = "red"
-let color2 = "green"
-let color3 = "blue"
-let colors = ["red", "green", color3]
-console.log("colors", colors);
+let projector1 = {
+    color: "white",
+    price: 50000,
+    brand: "lg"
+}
 
 
 
 
-let prices = [200, 100, 3000]
-let evenNumbers = [2, 4, 6, 8, 10]
-
-let userStatuses = [true, false, true, true]
-
-let arr = ["string", true, undefined, null, 100]
-console.log("arr", arr);
-
-// let brands = [0th index, 1st index]
-// let brands = ["apple", "lg"]
+let projector2 = {
+    color: "black",
+    price: 40000,
+    brand: "benq",
+    brand: "samsung",
+    Brand: "apple"
+}
 
 
-let brands = ["apple", "lg"]
-/* code here to change lg -> samsung */
-console.log("brands - prev", brands);
-console.log("brand's 0th index", brands[0]);
-console.log("brand's 1st index   -- prev", brands[1]);
+console.log("projector1", projector1);
+console.log("projector2", projector2);
+console.log("projector2 - brand", projector2.brand);
 
-brands[1] = "samsung" // updates lg -> samsung
 
-console.log("brand's 1st index   -- after ", brands[1]);
 
-console.log("brands - after", brands);
+let person1 = {
+    firstName: "ram",
+    lastName: "bdr",
+    age: 12,
+    address: "ktm",
+    isMarried: false,
+}
 
-brands[2] = "panasonic"  // adds new value in index 2
+let person2 = {
+    firstName: "ram",
+    lastName: "kumar",
+    age: 25,
+    address: "bhaktapr",
+    isMarried: true
+}
 
-console.log("brands - after", brands);
+
+
 
 /* 
 
-    let length = 100
-    length = 200
-
-    array elements update
-    brands[1] = lg
-    brands[1] = samguns
-
-
-*/
+name red
+hex #FF0000
+rgb 255,0,0
 
 
 
+TODO: create an object of red, black & white colors containing above properties...
 
 
+ */
+
+let color1 = {
+    name: "red",
+    hex: "#FF0000",
+    rgb: "rgb(255,0,0)"
+}
+let color2 = {
+    name: "white",
+    hex: "#FFFFF",
+    rgb: "rgb(255,255,255)"
+}
+let color3 = {
+    name: "black",
+    hex: "#000000",
+    rgb: "rgb(0,0,0)"
+}
+
+console.log("color1,", color1);
+// console.log("color2,", color2);
+// console.log("color3,", color3);
+
+let colors = ["red", "white", "black"]
+console.log("colors -prev", colors);
+
+colors = [color1, color2, color3]
+console.log("colors -after", colors);
+
+
+
+let companyName = "apple"
+let companyWebsite = "apple.com"
+let companyCEO = "steve"
+let companyStockPrice = 1000
+let companyESTd = "1990"
+
+
+let companyOne = ["apple", "apple.com", "steve", 1000, 1990]
+
+let company2Name = "lg"
+let company2Website = "lg.com"
+let company2CEO = "lg"
+let company2StockPrice = 1000
+let company2ESTd = "1990"
+
+
+let company1 = {
+    name: "apple",
+    website: "apple.com",
+    ceo: "steve",
+    price: 1000,
+    estd: 1990
+}
+
+let company2 = {
+    name: "lg",
+    website: "lg.com",
+    ceo: "lg",
+    price: 1000,
+    estd: 1990
+}
+
+company1 = {
+    name: "apple",
+    website: "apple.inc",
+    ceo: "steve jobs",
+    price:51000,
+    estd: 1990
+}
+
+
+/* TODO: create an array of brands */
+let brands = [
+    company1,
+    company2,
+    {
+        name:"samsung",
+        estd:"1900",
+        website:"Samsung.com"
+    }
+]
+
+
+console.log("brands", brands);
