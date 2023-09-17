@@ -1,90 +1,95 @@
 
-let name = "hari kumar"
-/* code below  */
-name = "hari bahadur"
 
-console.log("name", name);
-
-let age = 20
-age = 30
-
-/* array  
-        index  // always starts with 0
-*/
-let colors = ["red", "orge", "blue"]
-/* code below */
-console.log("colors", colors);
-console.log("colors - 1st index - prev", colors[1]);
-colors[1] = "ORANGE"
-console.log("colors - 1st index - after ", colors[1]);
-
-
-
-
-/* TODO: make an array of your family members */
-
-// let familyMembers = [
-//     "dad",
-//     "mom",
-//     "brother"
-// ]
-
-let familyMembers = [
+let students = [
     {
-        // index: 0,
-        name: "mr dad",
-        age: 50,
-        phone: 98510
+        roll: 1,
+        courses: ["Web", "Mobile"]
     },
     {
-        // index: 1,
-        name: "mrs mom",
-        age: 45,
-        phone: 98666,
-    },
-    {
-        // index: 2,
-        name: " brother",
-        age: 999999,  // TODO: fix this to 20
-        phone: 97666,
-    },
+        roll: 2,
+        courses: ["Machine Learning", "Mobile"]  // change mobile to Artificial intelligence via code
+    }
 ]
 
-console.log("familyMembers", familyMembers);
-
- let brother = familyMembers[2]; // {name:brohter,age:9999,.....}
-console.log("borther -prev", brother);
-brother.age = 20;
-console.log("borther -after", brother); 
+console.log("before", students[1].courses);
+console.log("before", students[1]);
 
 
-/* or we can do...  */
-familyMembers[2].age = 20
-console.log("brohter",familyMembers[2]);
+students[1].courses[1] = "Artificial.. In.."
 
-
-/* object 
-    syntax 
-
-        let objName = {
-            key : value,
-            key : value,
-            key : value,
-        }
-*/
-
-// let myMobile = "samsung"
-
-let myMobile = {
-    brand: "samsung",
-    model: "j7",
-    price: 200000,
-    mfd: 2020
+students[2] = {
+    roll: 3,
+    courses: ["Mobile"]
 }
 
-console.log("myMobile", myMobile);
-console.log("myMobile -price -before", myMobile.price);
-myMobile.price = 10000 // change objects property value
-console.log("myMobile -price - after ", myMobile.price);
-console.log("myMobile", myMobile);
 
+console.log("after", students);
+console.log("after", students);
+
+
+/* 
+    TODO: 
+     student with roll 2 have Mobile as one of his course 
+    - change it io Artificial Intelligence 
+    - and print it. 
+
+    Output:
+
+    [
+        {
+            roll: 1,
+            courses: ["Web", "Mobile"]
+        },
+        {
+            roll: 2,
+            courses: ["Machine Learning", "Artificial Intelligence"]
+        }
+    ]
+*/
+
+
+/* Operators
+    assignment operators
+    arthematic operator
+    conditional operator
+    logical operator
+*/
+
+
+let number = 100
+number = 100 + number
+console.log({ number });
+
+
+let count = 10
+
+// count = 10  + 10
+count += 10  // count = count + 10
+console.log({ count });
+
+
+let value = 0
+value++  // 1
+value++  // 2
+console.log({ value });
+
+/* arthematic operators
+     + 
+     - 
+     * multiplication
+     /   divistion    10 /3     3.3333
+     %  modulous     10 % 3   gives out remainder   1  
+*/
+
+console.log( 10 / 3 );
+console.log( 10 % 3 );
+
+console.log(1<2);
+console.log(2<=2);
+console.log(2>2);
+console.log(2>=2);
+
+// EQUALITY OPERTOR == 
+// strict EQUALITY OPERTOR === 
+
+console.log("hello"  == "Hello");
