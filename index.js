@@ -1,95 +1,85 @@
 
+/* 
+    let willRain = true
 
-let students = [
-    {
-        roll: 1,
-        courses: ["Web", "Mobile"]
-    },
-    {
-        roll: 2,
-        courses: ["Machine Learning", "Mobile"]  // change mobile to Artificial intelligence via code
+    if (willRain) {
+        console.log("take umbrealla");
+    } else {
+        console.log("no need to take umbrealla.");
     }
-]
+ */
 
-console.log("before", students[1].courses);
-console.log("before", students[1]);
+/* nested  - if - else */
+let willRain = false
+let hasProbability = false
+let isVerySunny = false
 
+if (willRain) {
+    console.log("take umbrealla");
+} else {
+    if (hasProbability) {
+        console.log("your wish");
+    } else {
+        console.log("no-need");
+    }
+}
 
-students[1].courses[1] = "Artificial.. In.."
+if (willRain) {
+    console.log("take umbrealla");
+} else if (hasProbability) {
+    console.log("your wish");
+} else if (isVerySunny) {
+    console.log("take umbrellla");
+} else {
+    console.log("no need.");
+}
 
-students[2] = {
-    roll: 3,
-    courses: ["Mobile"]
+let person1 = {
+    name: "Ram",
+    age: 25,
+    hasConsent: false,
+    hasSubmittedProject: true,
+    metAttendance: false
+}
+
+/* marriage : must be grtr or eq to 20 */
+
+if (person1.age >= 20) {
+    console.log("he can ");
+} else {
+    console.log("he cant ");
+}
+
+if (person1.hasSubmittedProject) {
+    console.log("can take exam");
+} else {
+    console.log("not eligible");
 }
 
 
-console.log("after", students);
-console.log("after", students);
+/* falsy values in js */
+let ourCondtion = false;
+ourCondtion = 0
+ourCondtion = undefined
+ourCondtion = null
+ourCondtion = NaN
+ourCondtion = ''  // but ' ' is considered ture, casue a space is there.
+
+// except these upper 6 values, javascript considers all other values as true
 
 
-/* 
-    TODO: 
-     student with roll 2 have Mobile as one of his course 
-    - change it io Artificial Intelligence 
-    - and print it. 
-
-    Output:
-
-    [
-        {
-            roll: 1,
-            courses: ["Web", "Mobile"]
-        },
-        {
-            roll: 2,
-            courses: ["Machine Learning", "Artificial Intelligence"]
-        }
-    ]
-*/
+// ourCondtion ="somerandom"
+// ourCondtion =12
+// ourCondtion =[1,2,]
+// ourCondtion =[]
+// ourCondtion ={}
+if (ourCondtion) {
+    console.log(ourCondtion, "true condition");
+} else {
+    console.log(ourCondtion, "false condition");
+}
 
 
-/* Operators
-    assignment operators
-    arthematic operator
-    conditional operator
-    logical operator
-*/
 
 
-let number = 100
-number = 100 + number
-console.log({ number });
 
-
-let count = 10
-
-// count = 10  + 10
-count += 10  // count = count + 10
-console.log({ count });
-
-
-let value = 0
-value++  // 1
-value++  // 2
-console.log({ value });
-
-/* arthematic operators
-     + 
-     - 
-     * multiplication
-     /   divistion    10 /3     3.3333
-     %  modulous     10 % 3   gives out remainder   1  
-*/
-
-console.log( 10 / 3 );
-console.log( 10 % 3 );
-
-console.log(1<2);
-console.log(2<=2);
-console.log(2>2);
-console.log(2>=2);
-
-// EQUALITY OPERTOR == 
-// strict EQUALITY OPERTOR === 
-
-console.log("hello"  == "Hello");
