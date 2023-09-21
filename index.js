@@ -1,63 +1,97 @@
+
+
+console.log()
+
+
+function work() {
+    console.log("working")
+}
+
+let person = {
+    "name": "ram",
+    "work": work
+}
+
+// console.log(person.name);
+// console.log(person.work);
+// person.work()
+
+let result = typeof (12)
+// console.log({ result });
+
+function double(value) {
+    console.log(2 * value)
+    return 2 * value
+    return undefined
+}
+
+
+let doubledValue = double(4)
+console.log({ doubledValue });
+
+
+
+
+function double(value) {
+    console.log(2 * value)
+}
+
+double(2)
+double(4)
+
+
+function sum(input1, input2) {
+    console.log("insidesum", input1 + input2);
+    return input1 + input2
+    console.log("adfter return , codes doesnot run");
+    console.log("adfter//");
+    return undefined  // by default function retursn back undefined.  
+}
+
+
+console.log("sum is ", sum(1, 2))
+console.log("type is ", typeof (12))
+
+let summedValue = sum(100, 200)
+console.log({ summedValue });
+
+
 /* 
-     1 + 2 = 3
-     1 + 3 = 4
-     3 + 3 = 6
-*/
-/* 
-    the sum of 1 and 2 is 3
-    the sum of 1 and 3 is 4
-    the sum of 3 and 3 is 6
+    1. make function  checkIsNumber
+    2. access input parameter
+    3. if else using typeof functin  as :53
+    4. return back value
 */
 
-/* console.log("2 + 2 = 2");
-console.log("1 + 2 = 3");
-console.log("3 + 3 = 6"); */
+function checkIsNumber(input) {
 
-/* function 
-
-    syntax 
-
-    function <functionName>(){
-
+    if (typeof (input) === "number") {
+        return true;
+    } else {
+        return false;
     }
+}
+
+
+/* TODOs:  OUTPUT */
+console.log(checkIsNumber(100)); // true
+console.log(checkIsNumber("hello")); // false
+
+
+let todos = [
+    { title: "html", status: true },
+    { title: "css", status: true },
+    { title: "js", status: false },
+]
+
+/* output : 
+    html is true
+    css is true
+    js is true
+
+
+    html is completed
+    css is completed
+    js is pending
 
 */
-
-console.log(1,2);
-
-function calculateSum(input1, input2) { // input1 and input2 are called parameters
-    console.log({ input1 }, { input2 });
-    console.log(input1 + " + " + input2 + " = " + (input1 + input2));
-    console.log("\n");
-}
-
-/* executing / calling  a function */
-
-calculateSum(100, 200)  // 100 and 200 here are called arugements
-calculateSum(10, 20)
-calculateSum(1, 2)
-
-
-
-// let dbPassword = "12345678"
-
-let user2 = {
-    email: "two@two.com",
-    password: 12345678
-}
-
-let user3 = {
-    email: "three@gmail.com",
-    password: 1234234234
-}
-
-let user4 = {
-    email: "four@gmail.com",
-    password: 12345678
-}
-
-// two@two.com can login
-// tgree@gmail.com cant login
-// four@gmail.com can login
-
-/* Ternary operator   */
